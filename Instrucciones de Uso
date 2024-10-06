@@ -7,8 +7,8 @@ Mars data folder: https://drive.google.com/drive/folders/1TsOXsP5ZjU5ODXULMXiXqK
 
 Once the data is loaded we have the codes which can be found in this repository with the names:
 These codes can be used by copying the code to a Google Colab file or using the respective Colab links 
-Code for earthquakes on the moon:
-Code for earthquakes on the moon:
+Code for earthquakes on the moon: https://colab.research.google.com/drive/1ZoAMXe1WE6FWzwgq5q3hN-CDGJOQLvf0?usp=sharing 
+Code for seism on mars: https://colab.research.google.com/drive/15RUl48dyH434W-kZ8cFVOpKLGTLZBXSL?usp=sharing
 
 Note: Although the codes are the same, there are changes in the name of each of the CSV files, so in order not to create confusion it was decided to create two different codes. 
 
