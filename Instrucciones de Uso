@@ -1,8 +1,8 @@
-Tepeyóllotl es un programa que permite filtrar datos sísmicos, dichos datsos sismicos son datos de pruebas de misiones espaciales del Apollo 12, 15 y 16, asi como del Mars InSight
-De los datos de prueba que tenemos no todas las señales son de sismos, por lo cual el filtro Tepeyóllotl nos ayuda a clasificar aquellas frecuencias que nos dan la impresion de un sismo
-Como primer estancia tenemos los datos de la luna y de marte, estos datos se encuentran es tipo CSV, y conforman datos de tiempo absoluto, tiempo relativo y la velocidad
-Los archivo se encuentran en dos carpetas de drive de forma libre, para que puedan agregar estas carpetas su inicio (mediante un acesso directo)
-Carpeta de datos de la luna: https://drive.google.com/drive/folders/18GQ9ARaDnqMdBxV50Tt8oOTQfxVm-FEN?usp=drive_link 
+Tepeyóllotl is a program that allows us to filter seismic data, these seismic data are test data from Apollo 12, 15 and 16 space missions, as well as Mars InSight.
+From the test data we have not all the signals are from earthquakes, so the Tepeyollotl filter helps us to classify those frequencies that give us the impression of an earthquake.
+As first stay we have the data of the moon and mars, these data are in CSV type, and conform data of absolute time, relative time and velocity.
+The files are located in two free form drive folders, so you can add these folders to your home (by direct access).
+Moon data folder: https://drive.google.com/drive/folders/18GQ9ARaDnqMdBxV50Tt8oOTQfxVm-FEN?usp=drive_link 
 Carpeta de datos de Marte: https://drive.google.com/drive/folders/1TsOXsP5ZjU5ODXULMXiXqKJ_r49XqwGA?usp=drive_link
 
 Una vez con los datos cargados tenemos los códigos los cuales se encuentra en este repositorio con los nombres:
