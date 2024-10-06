@@ -3,16 +3,16 @@ From the test data we have not all the signals are from earthquakes, so the Tepe
 As first stay we have the data of the moon and mars, these data are in CSV type, and conform data of absolute time, relative time and velocity.
 The files are located in two free form drive folders, so you can add these folders to your home (by direct access).
 Moon data folder: https://drive.google.com/drive/folders/18GQ9ARaDnqMdBxV50Tt8oOTQfxVm-FEN?usp=drive_link 
-Carpeta de datos de Marte: https://drive.google.com/drive/folders/1TsOXsP5ZjU5ODXULMXiXqKJ_r49XqwGA?usp=drive_link
+Mars data folder: https://drive.google.com/drive/folders/1TsOXsP5ZjU5ODXULMXiXqKJ_r49XqwGA?usp=drive_link
 
-Una vez con los datos cargados tenemos los códigos los cuales se encuentra en este repositorio con los nombres:
-Estos códigos lo puedes utilizar copiando el código a un archivo de Google Colab o usando los respectivos enlaces de Colab 
-Código para sismos en la luna:
-Código para sismos en la luna:
+Once the data is loaded we have the codes which can be found in this repository with the names:
+These codes can be used by copying the code to a Google Colab file or using the respective Colab links 
+Code for earthquakes on the moon:
+Code for earthquakes on the moon:
 
-Nota: Si bien los códigos son los mismos existen cambios en la nomeclatura de cada uno de los archivos CSV por lo cual para no crear confusión se decicdio crear dos códigos diferentes 
+Note: Although the codes are the same, there are changes in the name of each of the CSV files, so in order not to create confusion it was decided to create two different codes. 
 
-Una vez con el código en Colab solo debemos de copiar la ruta de la carpeta  y correr el programa.
+Once we have the code in Colab we only have to copy the path to the folder and run the program.
 
 
-Esperamos que el demo solo sea el principio de una inversion a largo plazo que nos ayude no solo a detectar un sismo, si no que ademas nos ayude a entender la composición de los planetas
+We hope that the demo is just the beginning of a long term investment that will help us not only to detect an earthquake, but also to understand the composition of the planets.
