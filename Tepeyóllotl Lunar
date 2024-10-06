@@ -9,7 +9,7 @@ pd.set_option('display.max_columns', None)  # Show all the columns
 pd.set_option('display.max_rows', None)     # Show all the rows
 
 # Path to the directory containing the CSV file
-ruta_directorio = "/content/drive/MyDrive/LUNA"
+ruta_directorio = "/content/drive/MyDrive/LUNARTEPEYOLLOTL"
 
 # Search for all CSV files within the directory
 ruta_archivo = glob.glob(ruta_directorio + "/*.csv")  # Add '*.csv' to find CSV file
