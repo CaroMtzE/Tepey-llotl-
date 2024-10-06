@@ -1,0 +1,17 @@
+Tepeyóllotl es un programa que permite filtrar datos sísmicos, dichos datsos sismicos son datos de pruebas de misiones espaciales del Apollo 12, 15 y 16, asi como del Mars InSight
+De los datos de prueba que tenemos no todas las señales son de sismos, por lo cual el filtro Tepeyóllotl nos ayuda a clasificar aquellas frecuencias que nos dan la impresion de un sismo
+Como primer estancia tenemos los datos de la luna y de marte, estos datos se encuentran es tipo CSV, y conforman datos de tiempo absoluto, tiempo relativo y la velocidad
+Los archivo se encuentran en dos carpetas de drive de forma libre, para que puedan agregar estas carpetas su inicio (mediante un acesso directo)
+Carpeta de datos de la luna
+Carpeta de datos de Marte 
+
+Una vez con los datos cargados tenemos los códigos los cuales se encuentra en este repositorio con los nombres:
+Estos códigos lo puedes utilizar copiandolo a un archivo de Google Colab 
+O usando el enlace de Colab del siguiente link 
+Código para sismos en la luna:
+Código para sismos en la luna:
+
+Una vez con el código en Colab solo debemos de copiar la ruta del 
+
+
+
