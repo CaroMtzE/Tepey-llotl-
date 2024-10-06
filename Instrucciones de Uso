@@ -6,12 +6,13 @@ Carpeta de datos de la luna: https://drive.google.com/drive/folders/18GQ9ARaDnqM
 Carpeta de datos de Marte: https://drive.google.com/drive/folders/1TsOXsP5ZjU5ODXULMXiXqKJ_r49XqwGA?usp=drive_link
 
 Una vez con los datos cargados tenemos los códigos los cuales se encuentra en este repositorio con los nombres:
-Estos códigos lo puedes utilizar copiandolo a un archivo de Google Colab 
-O usando el enlace de Colab del siguiente link 
+Estos códigos lo puedes utilizar copiando el código a un archivo de Google Colab o usando los respectivos enlaces de Colab 
 Código para sismos en la luna:
 Código para sismos en la luna:
 
-Una vez con el código en Colab solo debemos de copiar la ruta del 
+Nota: Si bien los códigos son los mismos existen cambios en la nomeclatura de cada uno de los archivos CSV por lo cual para no crear confusión se decicdio crear dos códigos diferentes 
+
+Una vez con el código en Colab solo debemos de copiar la ruta de la carpeta  y correr el programa.
 
 
-
+Esperamos que el demo solo sea el principio de una inversion a largo plazo que nos ayude no solo a detectar un sismo, si no que ademas nos ayude a entender la composición de los planetas
