@@ -1,1 +1,76 @@
+import glob
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.fft import fft, fftfreq
+import os
+
+pd.set_option('display.max_columns', None)  # Show all the columns
+pd.set_option('display.max_rows', None)     # Show all the rows
+
+# Path to the directory containing the CSV file
+ruta_directorio = "/content/drive/MyDrive/MARSTEPEYOLLOTL"
+
+# Search for all CSV files within the directory
+ruta_archivo = glob.glob(ruta_directorio + "/*.csv")  # Add '*.csv' to find CSV file
+
+# Place to store each data (Dictionary)
+dataframes = {}
+
+# Read and store each CSV in the dictionary
+for archivo in ruta_archivo:
+    nombre = archivo.split("/")[-1]  # Extract only the filename (for Windows use \)
+    dataframes[nombre] = pd.read_csv(archivo)
+
+# Process each file to apply the FFT
+for nombre, df in dataframes.items():
+    print(f"Procesando archivo: {nombre}")
+
+    # Check that the necessary columns exist
+    if 'rel_time(sec)' not in df.columns or 'velocity(c/s)' not in df.columns:
+        print(f"Error: Las columnas 'time_rel(sec)' y 'velocity(c/s)' deben estar en el archivo {nombre}.")
+        continue
+
+    # Make sure the columns are correct
+    t = df["rel_time(sec)"].values
+    x = df["velocity(c/s)"].values
+
+    # Calculate the sampling frequency
+    fs = 1 / (t[1] - t[0])  # Assuming that the time interval is constant
+
+    # Calculate Fourier Transform
+    n = len(x)
+    X = fft(x)
+    frequencies = fftfreq(n, d=(t[1] - t[0]))
+
+    #  Frequency filter for possible quakes
+    mask = (frequencies >= 0.9) & (frequencies <= 5)  # mask to filter frequencies
+    filtro_frequencias = frequencies[mask]
+    filtro_magnitudes = np.abs(X[mask])  # Corresponding magnitudes
+
+    # Plot the signal over time and its FFT
+    plt.figure(figsize=(12, 6))
+
+    #Plot the signal over time
+    plt.subplot(2, 1, 1)
+    plt.plot(t, x)
+    plt.title(f'Señal en el tiempo - {nombre}')
+    plt.xlabel('Tiempo (s)')
+    plt.ylabel('Amplitud')
+
+    # Plot the magnitude of the FFT
+    plt.subplot(2, 1, 2)
+    plt.plot(frequencies[:n // 2], np.abs(X[:n // 2]), label='FFT Original')  #Plot only the positive part
+    plt.plot(filtro_frequencias, filtro_magnitudes, label='FFT Filtrada', color='r')  #Plot only the filter frequency
+    plt.title('Transformada de Fourier')
+    plt.xlabel('Frecuencia (Hz)')
+    plt.ylabel('Magnitud')
+    plt.legend()
+
+    plt.tight_layout()
+    plt.show()
+
+    # Calculate the dominance frequency
+    frecuencia_dominante = frequencies[np.argmax(np.abs(X[:n // 2]))]
+    print(f"Frecuencia dominante en {nombre}: {frecuencia_dominante:.2f} Hz")
 
